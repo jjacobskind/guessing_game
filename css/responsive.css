@@ -1,0 +1,34 @@
+/**********************
+DISPLAY ON MEDIUM-SIZED SCREENS
+**********************/
+
+@media screen and (min-width: 480px) {
+	header {
+		text-align: left;
+	}
+
+	header h2 {
+		font-size: 1.75em;
+	}
+
+	header ul {
+		float: right;
+		margin: 0 10px 7px 0;
+	}
+
+}
+
+/**********************
+DISPLAY ON LARGE SCREENS
+**********************/
+
+@media screen and (min-width: 660px) {
+	header h2 {
+		font-size: 2em;
+	}
+
+	header ul {
+		float: right;
+		margin: 0 10px 7px 0;
+	}
+}

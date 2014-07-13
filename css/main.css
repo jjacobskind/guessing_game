@@ -1,0 +1,132 @@
+/************************
+HEADER
+************************/
+
+header {
+	margin: 0 0 30px 0;
+	padding: 0;
+	background: #333;
+	float: left;
+	min-width: 100%;
+	text-align: center;
+}
+
+header h2 {
+	font-family: "Kalam", sans-serif;
+	font-size:1.5em;
+	line-height: 1em;
+	color: #aaa;
+	margin: 10px 0 10px 20px;
+}
+
+header ul {
+	list-style: none;
+	margin: 0 0 7px 0;
+	padding: 0;
+	font-size: 0;
+}
+
+header ul li {
+	display: inline-block;
+	margin: 0;
+	font-size: 16px;
+	/*float: right;*/
+}
+
+header ul li a {
+	text-decoration: none;
+	color: #333;
+	padding: 4px;
+	background: #ddd;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+}
+
+header ul li a:hover {
+	color: #ddd;
+}
+
+#left_btn {
+	border-radius: 5px;
+	border-right-width: 0.5px;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	background-color: #9be;
+}
+
+#right_btn {
+	border-radius: 5px;
+	border-left-width: 1px;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	background-color: #68c;
+}
+
+/************************
+GAME SPACE
+************************/
+
+#game_square {
+	background: #ddd;
+	margin: 5px auto;
+	text-align: center;
+	padding: 15px;
+	border-radius: 10px;
+	width: 40%;
+	min-width: 200px;
+	clear: left;
+}
+
+#game_square p {
+	margin-top: 0;
+}
+
+#game_square a{
+	text-decoration: none;
+	color: #eee;
+	background: #33d;
+	font-size:1.25em;
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+	border-radius: 5px;
+	display: inline-block;
+	clear: left;
+	margin: 10px 0 10px 0;
+}
+
+#game_square a:hover{
+	color: #111;
+}
+
+#game_square input {
+	border-style: none;
+	border-radius: 3px;
+	font-size: 1.5em;
+	width: 80%;
+	margin: 0 10% 0 10%;
+}
+
+#prev_guess_square {
+	background: #eee;
+	margin: 15px auto;
+	text-align: center;
+	padding: 3px;
+	border-radius: 10px;
+	width: 40%;
+	min-width: 200px;
+	clear: left;
+}
+
+/************************
+FOOTER
+************************/
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+}
+
+
