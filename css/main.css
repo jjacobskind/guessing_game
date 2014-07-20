@@ -3,12 +3,13 @@ HEADER
 ************************/
 
 header {
-	margin: 0 0 30px 0;
+	margin: 0;
 	padding: 0;
 	background: #333;
 	float: left;
 	min-width: 100%;
 	text-align: center;
+	height: 60px;
 }
 
 header h2 {
@@ -19,31 +20,38 @@ header h2 {
 	margin: 10px 0 10px 20px;
 }
 
-header ul {
+#navbar {
+	height: 40px;
+	width: 100%;
+	background: #333;
+	text-align: center;
+	float:left;
+	margin-bottom: 20px;
+}
+
+#navbar ul {
 	list-style: none;
-	margin: 0 0 7px 0;
+	margin: 12px;
 	padding: 0;
 	font-size: 0;
 }
 
-header ul li {
+#navbar ul li {
 	display: inline-block;
 	margin: 0;
 	font-size: 16px;
-	/*float: right;*/
 }
 
-header ul li a {
+#navbar ul li a {
 	text-decoration: none;
 	color: #333;
 	padding: 4px;
-	background: #ddd;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #000;
 }
 
-header ul li a:hover {
+#navbar ul li a:hover {
 	color: #ddd;
 }
 
@@ -67,19 +75,74 @@ header ul li a:hover {
 GAME SPACE
 ************************/
 
+#endgame {
+	position: absolute;
+	width:240px;
+	min-height: 250px;
+	background-color: #35b;
+	border-style: solid;
+	border-color: #000;
+	border-width: 2px;
+	border-radius: 20px;
+	left: 50%;
+	margin: 130px 0 0 -130px;
+	display: none;
+	text-align: center;
+	padding: 10px;
+	color: #ddd;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#end_msg {
+	font-size: 1.5em;
+}
+
+#endgame a {
+	text-decoration: none;
+	color: #ddd;
+	background: #333;
+	border-radius: 5px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	padding: 10px;
+	font-size: 1em;
+	line-height: 2.5em;
+	vertical-align: middle;
+}
+
+#endgame a:hover {
+	color: #fff8dc;
+}
+
 #game_square {
+	clear: left;
 	background: #ddd;
-	margin: 5px auto;
+	margin: 0 auto;
 	text-align: center;
 	padding: 15px;
 	border-radius: 10px;
 	width: 40%;
 	min-width: 200px;
-	clear: left;
 }
 
 #game_square p {
 	margin-top: 0;
+}
+
+#warm_guesses {
+	color: red;
+}
+
+#cold_guesses {
+	color: blue;
+}
+
+#err {
+	color: #722;
+	font-size: 0.8em;
+	font-weight: bold;
 }
 
 #game_square a{
@@ -107,6 +170,7 @@ GAME SPACE
 	font-size: 1.5em;
 	width: 80%;
 	margin: 0 10% 0 10%;
+	text-align: center;
 }
 
 #prev_guess_square {

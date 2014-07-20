@@ -12,23 +12,36 @@
 	<body>
 		<header>
 			<h2>Jeremy Jacobskind's Guessing Game</h2>
+		</header>
+		<div id="navbar">
 			<ul id="menu">
-				<li><a href="#" id="left_btn">New Game</a></li>
+				<li><a href="#" id="left_btn" class="new_game">New Game</a></li>
 				<li><a href="#" id="right_btn">Show Answer</a></li>
 			</ul>
-		</header>
+		</div>
+		<div id="endgame">
+			<p><span id="end_msg"></span></p>
+			<p>Click 'New Game' to play again.</p>
+			<p><a href="#" class="new_game" >New Game</a></p>
+		</div>
 		<div id="game_square">
+
 			<p>Please guess a number between 1 and 100.</p>
-			<input type="text">
+			<input id="guess_field" type="text">
 			<a href="#">Guess!</a>
-			<p>Response messages to guesses will display here</p>
+			<p><span id="response">Try to guess the number between 1 and 100!</span></p>
+			<p><span id="err"> </span></p>
 		</div>
 		<div id="prev_guess_square">
 			<h3>Previous Guesses</h3>
-			<p>ex: 50, 25, 12</p>
+			<p><span id="warm_guesses"></span></p>
+			<p><span id="cold_guesses"></span></p>
+			<p><span id="turns">You have 5 turns remaining.</span></p>
 		</div>
 		<footer>
 			&copy; 2014 Jeremy Jacobskind
 		</footer>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 <html>

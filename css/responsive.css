@@ -11,9 +11,15 @@ DISPLAY ON MEDIUM-SIZED SCREENS
 		font-size: 1.75em;
 	}
 
-	header ul {
+	#navbar ul {
 		float: right;
-		margin: 0 10px 7px 0;
+		margin: 12px;
+	}
+
+	#endgame {
+		width: 50%;
+		left: 0;
+		margin: 130px 24% 0;
 	}
 
 }
@@ -25,10 +31,5 @@ DISPLAY ON LARGE SCREENS
 @media screen and (min-width: 660px) {
 	header h2 {
 		font-size: 2em;
-	}
-
-	header ul {
-		float: right;
-		margin: 0 10px 7px 0;
 	}
 }
